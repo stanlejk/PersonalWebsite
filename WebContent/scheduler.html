@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112810626-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-112810626-1');
+		</script>
+		<meta charset="UTF-8">
+		<title>Stanley J. Kim</title>
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/fonts.min.css" />
+		<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+		
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="icon" href="images/faviconTransparent.ico">
+		<!-- <script>
+			$(document).ready(function(){
+			    $('.materialboxed').materialbox();
+			});
+		</script> -->
+    </head>
+    <body>
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<div id="header" class="valign-wrapper">
+			<img id="headshot" class="circle" src="images/headshot.jpg" alt="headshot.jpeg"/>
+			<h1 id="name">STANLEY J KIM</h1>
+			<div id="contactInfoButton" class="fixed-action-btn horizontal">
+				<a class="btn-floating btn-large">
+					<i style="background-color:#ff6d7f" class="large material-icons">contact_mail</i>
+				</a>
+				<ul>
+					<!-- <li><a class="btn-floating red"><i class="material-icons">call</i></a></li> -->
+					<li><a class="btn-floating yellow darken-1" href="mailto:stanleyjkim@gmail.com" target="_top"><i class="material-icons">email</i></a></li>
+					<li><a class="btn-floating green" href="https://github.com/stanlejk" target="_blank"><i class="mdi mdi-github-circle"></i></a></li>
+					<li><a class="btn-floating blue" href="https://www.linkedin.com/in/stanleyjkim/" target="_blank"><i class="mdi mdi-linkedin-box"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- NAVIGATION BAR -->
+		
+		<nav id="navBar">
+			<div class="nav-wrapper">
+				<ul id="nav-mobile" class="left hide-on-med-and-down">
+					<li><a id="navLink" class="hoverable" href="index.html">ABOUT</a></li>
+					<li><a id="navLink" class="hoverable" href="projects.html">PROJECTS</a></li>
+					<li><a id="navLink" class="hoverable" href="experience.html">EXPERIENCE</a></li>
+					<li><a id="navLink" class="hoverable" href="https://drive.google.com/file/d/0B0ecwHzZdN2QM1VNNlNnZVY0aXc/view?usp=sharing" target="_blank">CV</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<!-- PROJECT SECTION -->
+		
+		<div id="title" class="section">
+			<h1 id="titleText">SCheduler</h1>
+		</div>
+		
+		<div id="projects" class="section">
+			<div id="projects" class="valign-wrapper">
+				<div id="projectInfo">
+					<h3 id="subsection">BACKGROUND</h3>
+					<p>As a part of my Principles of Software Development course, I had the opportunity to collaborate 
+					with other students in developing a web-based Java program of our choice. For our project, we 
+					created SCheduler. SCheduler is a tool USC students can use to streamline the ever-difficult class 
+					registration process.</p>
+					<h3 id="subsection">TECHNICAL DETAILS</h3>
+					<p>Using the major and the classes a student has already taken as input, the SCheduler utilizes an 
+					algorithm we designed to generate five different course plans, each mapping out a unique arrangement 
+					of the courses the student must take that will fulfill their specific graduation requirements. The 
+					student can also save their favorite course plan to reaccess it in future visits to the webpage or 
+					regenerate five more schedules if they are unhappy with the first five. <br /><br />
+					We utilized MySQL for the functionality of saving the selected course plans to the database, as well 
+					as to store course information and major requirements. All of the back-end code was written in Java,
+					while the entirety of the front-end was written using HTML, CSS, and JavaScript. We also used the 
+					Materialize CSS Framework to beautify the website. </p>
+					<h3 id="subsection">CONCLUSION</h3>
+					<p>Working with a group of other students was definitely an unfamiliar challenge at first, but it was 
+					a great experience working with my other bright colleagues and working through our issues as a team to 
+					achieve our common goal. It was also an incredibly valuable experience to collaborate with other 
+					students to create the entire documentation for this project. The SCheduler is no longer publicly 
+					available online.</p>
+				</div>
+				<img id="stanley1" class="materialboxed responsive" data-caption="An example of a generated course plan." src="images/Scheduler.png"/>
+			</div>
+		</div>
+		<div class="divider"></div>
+	</body>
+</html>

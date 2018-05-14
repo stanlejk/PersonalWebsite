@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/*  */
+/* BODY CSS */
+/*  */
+body {
+	font-family: "Proxima Nova Thin";
+	color: #858585;
+	background-color: #232323;
+}
+
+/*  */
+/* TITLE HEADER CSS */
+/*  */
+.jumbotron {
+	background-color: #232323;
+	height: 30vh;
+}
+
+#titleContainer {
+	background-color: #232323;
+	text-align: center;
+	justify-content: center;
+	height: 100%;
+}
+
+#title {
+	padding-top: 20px;
+	font-size: 75px;
+	color: #ff6d7f;
+}
+
+.spacer {
+	height: 50px;	
+}
+
+@font-face {
+    font-family: "Proxima Nova Thin";
+    src: url('fonts/ProximaNovaThin-webfont.eot');
+    src: url('fonts/ProximaNovaThin-webfont.eot?#iefix') format('embedded-opentype'),
+    		 url('fonts/ProximaNovaThin-webfont.ttf') format('truetype');
+    src: url('fonts/ProximaNovaThin-webfont.woff2') format('woff2'),
+         url('fonts/ProximaNovaThin-webfont.woff') format('woff'),
+         url('fonts/ProximaNovaThin-webfont.svg#Proxima Nova Thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*  */
+/* NAVBAR CSS */
+/*  */
+nav {
+	position: absolute;
+	list-style: none;
+	text-align: center;
+	height: 10vh;
+	background-color: #232323;
+}
+
+#navitemContainer {
+	width: 60vw;
+	margin-left: 18vw;
+	margin-right: auto;
+}
+
+.nav div li {
+	display: inline;
+}
+
+.nav div a {
+	display: inline-block;
+}
+
+#navLink {
+	padding-left: 40px;
+	padding-right: 40px;
+	font-family: "Proxima Nova Thin";
+	color: #fff;
+}
+
+#navLink:hover {
+	color: #ff6d7f;
+	text-decoration: none;
+}
+
+.activeLink:hover {
+	cursor: default;
+	color: #ffffff;
+}
+
+/*  */
+/* BODY CSS */
+/*  */
+
+.aboutMeContainer {
+	text-align: center;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+.sectionTitle {
+	font-family: "Proxima Nova Thin";
+	font-size: 30px;
+	color: #ff6d7f;
+}
+
+img {
+	height: 300px;
+}

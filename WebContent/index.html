@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112810626-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'UA-112810626-1');
+			$( document ).ready(function() {
+				$(".button-collapse").sideNav();
+			});
+		</script>
+		<meta charset="UTF-8">
+		<title>Stanley J. Kim</title>
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<!-- <link rel="stylesheet" type="text/css" href="css/materialize.min.css"/> -->
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/fonts.min.css" />
+		<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="icon" href="images/faviconTransparent.ico">
+		
+    </head>
+    <body>
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+		
+		<!-- TOP JUMBOTRON -->
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container" id="titleContainer">
+				<svg viewBox="0 0 1418 116">
+					<g stroke="none" fill="none" fill-rule="evenodd" fill-opacity="0">
+						<text id="title" stroke="#ff6d7f" fill="#ff6d7f" font-weight="normal" font-size="144">
+							<tspan x="3" y="109">
+								<tspan>S</tspan>
+								<tspan>T</tspan>
+								<tspan>A</tspan>
+								<tspan>N</tspan>
+								<tspan>L</tspan>
+								<tspan>E</tspan>
+								<tspan>Y</tspan>
+								<tspan id="titleJ">J</tspan>
+								<tspan>K</tspan>
+								<tspan>I</tspan>
+								<tspan>M</tspan>
+							</tspan>
+						</text>
+					</g>
+				</svg>
+				<h1 id="subtitle" class="animating">I am a<span
+						class="txt-rotate"
+						data-period="2000"
+						data-rotate='[ " developer.", " creator.", " learner.", "n innovator."]'></span>
+				</h1>
+			</div>
+		</div>
+				
+		<!-- NAVIGATION BAR -->
+		<nav class="nav navbar navbar-expand-lg">
+			<div class="collapse navbar-collapse" id="navitemContainer">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a id="navLink" style="color: #ff6d7f;" class="activeLink">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a id="navLink" href="about.html">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a id="navLink" href="projects.html">PROJECTS</a>
+					</li>
+					<li class="nav-item">
+						<a id="navLink" href="experience.html">EXPERIENCE</a>
+					</li>
+					<li class="nav-item">
+						<a id="navLink" href="https://drive.google.com/file/d/0B0ecwHzZdN2QM1VNNlNnZVY0aXc/view?usp=sharing" target="_blank">CV</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		
+		<script>
+			var TxtRotate = function(el, toRotate, period) {
+			  this.toRotate = toRotate;
+			  this.el = el;
+			  this.loopNum = 0;
+			  this.period = parseInt(period, 10) || 2000;
+			  this.txt = '';
+			  this.tick();
+			  this.isDeleting = false;
+			};
+
+			TxtRotate.prototype.tick = function() {
+			  var i = this.loopNum % this.toRotate.length;
+			  var fullTxt = this.toRotate[i];
+
+			  if (this.isDeleting) {
+			    this.txt = fullTxt.substring(0, this.txt.length - 1);
+			  } else {
+			    this.txt = fullTxt.substring(0, this.txt.length + 1);
+			  }
+
+			  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+			  var that = this;
+			  var delta = 300 - Math.random() * 100;
+
+			  if (this.isDeleting) { delta /= 2; }
+
+			  if (!this.isDeleting && this.txt === fullTxt) {
+			    delta = this.period;
+			    this.isDeleting = true;
+			  } else if (this.isDeleting && this.txt === '') {
+			    this.isDeleting = false;
+			    this.loopNum++;
+			    delta = 500;
+			  }
+
+			  setTimeout(function() {
+			    that.tick();
+			  }, delta);
+			};
+
+			window.onload = function() {
+			  var elements = document.getElementsByClassName('txt-rotate');
+			  for (var i=0; i<elements.length; i++) {
+			    var toRotate = elements[i].getAttribute('data-rotate');
+			    var period = elements[i].getAttribute('data-period');
+			    if (toRotate) {
+			      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+			    }
+			  }
+			  // INJECT CSS
+			  var css = document.createElement("style");
+			  css.type = "text/css";
+			  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+			  document.body.appendChild(css);
+			};
+		</script>
+	</body>
+</html>
