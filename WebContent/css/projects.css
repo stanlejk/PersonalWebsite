@@ -45,6 +45,16 @@ body {
 }
 
 @font-face {
+    font-family: "League Spartan";
+    src: url('fonts/leaguespartan-bold.otf') format('opentype'),
+    		 url('fonts/leaguespartan-bold.ttf') format('truetype');
+    src: url('fonts/leaguespartan-bold-webfont.woff2') format('woff2'),
+         url('fonts/leaguespartan-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Proxima Nova Thin";
     src: url('fonts/ProximaNovaThin-webfont.eot');
     src: url('fonts/ProximaNovaThin-webfont.eot?#iefix') format('embedded-opentype'),
@@ -60,10 +70,6 @@ body {
 /* NAVBAR CSS */
 /*  */
 nav {
-	/* display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%; */
 	position: absolute;
 	list-style: none;
 	text-align: center;
@@ -101,104 +107,3 @@ nav {
 	cursor: default;
 	color: #ffffff;
 }
-
-/*  */
-/* BODY CSS */
-/*  */
-
-.aboutMeContainer {
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 62.5%;
-	text-align: center;
-	height: 400px;
-}
-
-.aboutMeContainer img {
-	position: relative;
-	right: 240px;
-}
-
-#aboutMeText {
-	position: relative;
-	bottom: 200px;
-	left: 400px;
-}
-
-.textBlock {
-	width: 48%;
-}
-
-.sectionTitle {
-	font-family: "Proxima Nova Thin";
-	font-size: 30px;
-	color: #ff6d7f;
-}
-
-img {
-	height: 250px;
-}
-
-#cardsContainer {
-	position: relative;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 62.5%;
-    height: 580px;
-}
-
-#cardsContainer img {
-	height: 280px;
-}
-
-#img1 {
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-
-#img2 {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-#img3 {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-}
-
-#img4 {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-}
-
-.imgWrap {
-  position: relative;
-  height: 296px;
-}
-
-.description {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(255, 109, 127, 0.72);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
-}
-
-.imgWrap:hover .description {
-  visibility: visible;
-  opacity: 1;
-}
-

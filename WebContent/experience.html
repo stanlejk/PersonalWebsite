@@ -4,183 +4,130 @@
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112810626-1"></script>
 		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-		
-		  gtag('config', 'UA-112810626-1');
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'UA-112810626-1');
+			$( document ).ready(function() {
+				$(".button-collapse").sideNav();
+			});
 		</script>
 		<meta charset="UTF-8">
 		<title>Stanley J. Kim</title>
 		<!--Import Google Icon Font-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!--Import materialize.css-->
-		<link rel="stylesheet" type="text/css" href="css/materialize.min.css"/>
+		<!-- <link rel="stylesheet" type="text/css" href="css/materialize.min.css"/> -->
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/fonts.min.css" />
-		
 		<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" type="text/css" href="css/home.css">
+		<link rel="stylesheet" type="text/css" href="css/experience.css">
 		
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="icon" href="images/faviconTransparent.ico">
-		
     </head>
     <body>
 		<!--Import jQuery before materialize.js-->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>
-		<div id="header" class="valign-wrapper">
-			<img id="headshot" class="circle" src="images/headshot.jpg" alt="headshot.jpeg"/>
-			<h1 id="name">STANLEY J KIM</h1>
-			<div id="contactInfoButton" class="fixed-action-btn horizontal">
-				<a class="btn-floating btn-large">
-					<i style="background-color:#ff6d7f" class="large material-icons">contact_mail</i>
-				</a>
-				<ul>
-					<!-- <li><a class="btn-floating red"><i class="material-icons">call</i></a></li> -->
-					<li><a class="btn-floating yellow darken-1" href="mailto:stanleyjkim@gmail.com" target="_top"><i class="material-icons">email</i></a></li>
-					<li><a class="btn-floating green" href="https://github.com/stanlejk" target="_blank"><i class="mdi mdi-github-circle"></i></a></li>
-					<li><a class="btn-floating blue" href="https://www.linkedin.com/in/stanleyjkim/" target="_blank"><i class="mdi mdi-linkedin-box"></i></a></li>
-				</ul>
+		<!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+		
+		<!-- TOP JUMBOTRON -->
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container" id="titleContainer">
+				<h1 id="title">Experience</h1>
+				<a id="subtitle" href="index.html">STANLEY J KIM</a>
 			</div>
 		</div>
 		
 		<!-- NAVIGATION BAR -->
-		
-		<nav id="navBar">
-			<div class="nav-wrapper">
-				<ul id="nav-mobile" class="left hide-on-med-and-down">
-					<li><a id="navLink" class="hoverable" href="index.html">ABOUT</a></li>
-					<li><a id="navLink" class="hoverable" href="projects.html">PROJECTS</a></li>
-					<li><a id="clickedLink">EXPERIENCE</a></li>
-					<li><a id="navLink" class="hoverable" href="https://drive.google.com/file/d/0B0ecwHzZdN2QM1VNNlNnZVY0aXc/view?usp=sharing" target="_blank">CV</a></li>
+		<nav class="nav navbar navbar-expand-lg">
+			<div class="collapse navbar-collapse" id="navitemContainer">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a id="navLink" href="index.html">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a id="navLink" href="about.html">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a id="navLink" href="projects.html">PROJECTS</a>
+					</li>
+					<li class="nav-item">
+						<a id="navLink" style="color: #ff6d7f;" class="activeLink">EXPERIENCE</a>
+					</li>
+					<li class="nav-item">
+						<a id="navLink" href="https://drive.google.com/file/d/0B0ecwHzZdN2QM1VNNlNnZVY0aXc/view?usp=sharing" target="_blank">CV</a>
+					</li>
 				</ul>
 			</div>
 		</nav>
 		
-		<!-- ABOUT -->
+		<div class="spacer"></div>
 		
-		<div id="title" class="section">
-			<h1 id="titleText">EXPERIENCE</h1>
-		</div>
-		
-		<div id="aboutMe" class="section">
-			<div id="aboutMe" class="valign-wrapper">
-				<a href="https://www.pingrab.co/" target="_blank">
-					<img id="stanley2" src="images/pingrab.png" alt="Pingrab Logo" style="border:0;">
-				</a>
-				<div id="aboutMeInfo">
-					<h2 id="sectionTitle">PINGRAB, INC. <font size=3 color="#858585">|</font> 
-					<font size=3>LOS ANGELES, CA</font></h2>
-					<h3 id="sectionSubtitle">Mobile Application Developer Intern <font color="#858585">|</font> 
-					JUNE 2017 - JAN 2018</h3>
-					<ul>
-						<li> •	As a Mobile Application Developer Intern at Pingrab, Inc., I worked with Xcode 8 and Swift 
-						4 to develop the iOS version of the Pingrab application.</li>
-						<li> •	During my internship, I was able to work very closely with the CEO of Pingrab in designing 
-						the app's interface and deciding its capabilities and uses. This experience gave me a very close 
-						look into the startup environment and taught me to handle a fast and professional work pace.</li>
-						<li> •	One of my largest contributions as an intern was my development of the entirety of the in-app
-						messaging system. In creating the messaging system, I utilized over 30 intricate pods, including 
-						the XMPPFramework, Alamofire, and CocoaLumberJack.</li>
-						<li> •	Having such a great experience and learning an incredible amount over the summer, I was able 
-						to continue my internship with Pingrab throughout the Fall 2017 semester, until January 2018.</li>
-					</ul>
-				</div>
+		<!-- EXPERIENCE -->
+		<div class="experienceContainer">
+			<a href="https://www.pingrab.co/" target="_blank">
+				<img id="stanley2" src="images/pingrab.png" alt="Pingrab Logo" style="border:0;">
+			</a>
+			<div id="aboutMeInfo">
+				<h2 id="sectionTitle">PINGRAB, INC. <font size=3 color="#858585">|</font> 
+				<font size=3>LOS ANGELES, CA</font></h2>
+				<h3 id="sectionSubtitle">Mobile Application Developer Intern <font color="#858585">|</font> 
+				JUNE 2017 - JAN 2018</h3>
+				<ul>
+					<li> •	As a Mobile Application Developer Intern at Pingrab, Inc., I worked with Xcode 8 and Swift 
+					4 to develop the iOS version of the Pingrab application.</li>
+					<li> •	During my internship, I was able to work very closely with the CEO of Pingrab in designing 
+					the app's interface and deciding its capabilities and uses. This experience gave me a very close 
+					look into the startup environment and taught me to handle a fast and professional work pace.</li>
+					<li> •	One of my largest contributions as an intern was my development of the entirety of the in-app
+					messaging system. In creating the messaging system, I utilized over 30 intricate pods, including 
+					the XMPPFramework, Alamofire, and CocoaLumberJack.</li>
+					<li> •	Having such a great experience and learning an incredible amount over the summer, I was able 
+					to continue my internship with Pingrab throughout the Fall 2017 semester, until January 2018.</li>
+				</ul>
 			</div>
 		</div>
-		<div class="divider"></div>
-		<div id="aboutMe" class="section">
-			<div id="aboutMe" class="valign-wrapper">
-				<a href="http://coded.academy/" target="_blank">
-					<img id="stanley2" src="images/coded.jpg" alt="Cod.ED Logo" style="border:0;">
-				</a>
-				<div id="aboutMeInfo">
-					<h2 id="sectionTitle">COD.ED <font color="#858585" size=-1>(formerly CodeTech Leg Godt)</font> <font size=3 color="#858585">|</font> 
-					<font size=3>FULLERTON, CA</font></h2>
-					<h3 id="sectionSubtitle">Educator <font color="#858585">|</font> 
-					JUNE 2016 - AUG 2016</h3>
-					<ul>
-						<li> •	Working as an educator at Cod.ED, I was given the opportunity to teach children--some as 
-						young as 7 years old--topics ranging from the most basic principles of computing, to more intricate
-						computer science concepts such as recursion and data structures.</li>
-						<li> •	Collaborating with the other educators, I worked to develop lesson plans and daily quizzes 
-						that we administered to the students to test their knowledge on computer science-related knowledge.</li>
-						<li> •	Through our hard work at CodeTech Leg Godt that summer, our team of educators was able to 
-						help our high school students achieve a pass rate of over 95% on the AP Computer Science exam 
-						administered later that school year!</li>	
-					</ul>
-				</div>
+		<div class="experienceContainer">
+			<a href="http://coded.academy/" target="_blank">
+				<img id="stanley2" src="images/coded.jpg" alt="Cod.ED Logo" style="border:0;">
+			</a>
+			<div id="aboutMeInfo">
+				<h2 id="sectionTitle">COD.ED <font color="#858585" size=-1>(formerly CodeTech Leg Godt)</font> <font size=3 color="#858585">|</font> 
+				<font size=3>FULLERTON, CA</font></h2>
+				<h3 id="sectionSubtitle">Educator <font color="#858585">|</font> 
+				JUNE 2016 - AUG 2016</h3>
+				<ul>
+					<li> •	Working as an educator at Cod.ED, I was given the opportunity to teach children--some as 
+					young as 7 years old--topics ranging from the most basic principles of computing, to more intricate
+					computer science concepts such as recursion and data structures.</li>
+					<li> •	Collaborating with the other educators, I worked to develop lesson plans and daily quizzes 
+					that we administered to the students to test their knowledge on computer science-related knowledge.</li>
+					<li> •	Through our hard work at CodeTech Leg Godt that summer, our team of educators was able to 
+					help our high school students achieve a pass rate of over 95% on the AP Computer Science exam 
+					administered later that school year!</li>	
+				</ul>
 			</div>
 		</div>
-		<div class="divider"></div>
-		<div id="aboutMe" class="section">
-			<div id="aboutMe" class="valign-wrapper">
-				<a href="https://twitter.com/stuckpixelinc?lang=en" target="_blank">
-					<img id="stanley2" src="images/stuckpixel.png" alt="StuckPixel Logo" style="border:0;">
-				</a>
-				<div id="aboutMeInfo">
-					<h2 id="sectionTitle">STUCKPIXEL, INC. <font size=3 color="#858585">|</font> 
-					<font size=3>IRVINE, CA</font></h2>
-					<h3 id="sectionSubtitle">Computer Science Leadership Program <font color="#858585">|</font> 
-					JUNE 2014 - AUG 2014</h3>
-					<ul>
-						<li> •	During my time at StuckPixel, Inc., I shadowed mobile application developers throughout their 
-						day-to-day procedures, which mainly consisted of the development of the mobile game "Finger Frenzy", 
-						and the maintenance of StuckPixel's hit app, "Funny Pics".</li>
-						<li> •	In addition to shadowing application developers, I was also given an opportunity to lead a 
-						small group of interns in a hands-on Arduino-building project.</li>
-					</ul>
-				</div>
+		<div class="experienceContainer">
+			<a href="https://twitter.com/stuckpixelinc?lang=en" target="_blank">
+				<img id="stanley2" src="images/stuckpixel.png" alt="StuckPixel Logo" style="border:0;">
+			</a>
+			<div id="aboutMeInfo">
+				<h2 id="sectionTitle">STUCKPIXEL, INC. <font size=3 color="#858585">|</font> 
+				<font size=3>IRVINE, CA</font></h2>
+				<h3 id="sectionSubtitle">Computer Science Leadership Program <font color="#858585">|</font> 
+				JUNE 2014 - AUG 2014</h3>
+				<ul>
+					<li> •	During my time at StuckPixel, Inc., I shadowed mobile application developers throughout their 
+					day-to-day procedures, which mainly consisted of the development of the mobile game "Finger Frenzy", 
+					and the maintenance of StuckPixel's hit app, "Funny Pics".</li>
+					<li> •	In addition to shadowing application developers, I was also given an opportunity to lead a 
+					small group of interns in a hands-on Arduino-building project.</li>
+				</ul>
 			</div>
 		</div>
-		<div class="divider"></div>
-		
-		<!-- ***** NON CS RELATED WORK EXPERIENCE SECTION ***** -->
-
-		<!-- <div id="weTitle" class="section">
-			<h1><font size=5>NON-CS RELATED WORK EXPERIENCE</font></h1>
-			<p><font face="Proxima Nova Thin" size="3" color="#858585">Although this section consists of jobs that are not 
-			directly related to my career path, I've learned an incredible amount about being a hard worker from each of 
-			these jobs, which is why I am proud to list these previous work experiences.</font></p>
-		</div>
-		
-		<div id="aboutMe" class="section">
-			<div id="aboutMe" class="valign-wrapper">
-				<img id="stanley2" src="images/ebaes.png"/>
-				<div id="aboutMeInfo">
-					<h2 id="sectionTitle">EBAES</h2>
-					<h3 id="sectionSubtitle">Server <font color="#858585">|</font> 
-					<font size=-1>SEPT 2016 - DEC 2017</font></h3>
-					<p>Vital Skills Learned: Customer Service, Social Skills, Importance of strong communication skills </p>
-				</div>
-			</div>
-		</div>
-		<div class="divider"></div>
-		<div id="aboutMe" class="section">
-			<div id="aboutMe" class="valign-wrapper">
-				<img id="stanley2" src="images/project-cotton-hero.png"/>
-				<div id="aboutMeInfo">
-					<h2 id="sectionTitle">COTTON ON</h2>
-					<h3 id="sectionSubtitle">Sales Associate <font color="#858585">|</font> 
-					<font size=-1>MAY 2016 - AUG 2016</font></h3>
-					<p>Vital Skills Learned: Customer Service, Keeping the store front clean and professional</p>
-				</div>
-			</div>
-		</div>
-		<div class="divider"></div>
-		<div id="aboutMe" class="section">
-			<div id="aboutMe" class="valign-wrapper">
-				<img id="stanley2" src="images/bobatime.png"/>
-				<div id="aboutMeInfo">
-					<h2 id="sectionTitle">IT'S BOBATIME</h2>
-					<h3 id="sectionSubtitle">Crew Member <font color="#858585">|</font> 
-					<font size=-1>MAY 2015 - AUG 2015</font></h3>
-					<p>Vital Skills Learned: Customer Service, How to cook boba!</p>
-				</div>
-			</div>
-		</div>
-		<div class="divider"></div> -->
 	</body>
 </html>
